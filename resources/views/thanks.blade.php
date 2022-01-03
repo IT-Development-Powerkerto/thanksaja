@@ -16,16 +16,28 @@
     <title>Terima Kasih</title>
 
     <style>
+        body {
+        overflow: hidden;
+      }
         h1 {
             font-family: 'rubik';
             color: #009ed7;
             font-size: 40px;
             font-weight: 400;
-            margin-top: 50px
         }
         img {
             width: 500px;
-            margin-top: 70px;
+            margin-top: 50px;
+        }
+        @media (max-width: 991.98px) { 
+          h1 {
+            margin: auto;
+            font-size: 22px;
+            text-align: center;
+          }
+          img {
+            width: 350px;
+          }
         }
     </style>
 
