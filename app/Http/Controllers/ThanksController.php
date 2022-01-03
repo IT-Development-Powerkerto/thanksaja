@@ -6,9 +6,11 @@ use Illuminate\Http\Request;
 
 class ThanksController extends Controller
 {
-    public function redirectWA($wa, $text){
+    public function redirectWA($wa, $text, $message){
         $wa = $wa;
         $text = $text;
-        return view('thanks', compact('wa'), compact('text'));
+        $message = $message;
+        // dd($message);
+        return view('thanks', compact('wa'), compact('text'))->with('message', $message);
     }
 }

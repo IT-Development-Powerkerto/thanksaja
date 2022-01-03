@@ -34,8 +34,9 @@
 
     <div class="container">
         <div class="content mt-5 d-flex flex-column justify-content-center align-items-center">
-            <h1>Terimakasih Telah Memesan Produk Kami</h1>
-            <img src="../img/pana.png" alt="Terima Kasih">
+            {{--  <h1>Terimakasih Telah Memesan Produk Kami</h1>  --}}
+            <h1>{{ $message }}</h1>
+            <img src="../../../img/pana.png" alt="Terima Kasih">
         </div>
     </div>
     <script>setTimeout(function(){ window.location.href = 'https://api.whatsapp.com/send/?phone={{ $wa }}&text={{ $text }}'; }, 3000);</script>

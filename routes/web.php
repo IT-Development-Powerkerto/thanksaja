@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/{wa}/{text}', [ThanksController::class, 'redirectWA']);
+Route::get('/{wa}/{text}/{message}', [ThanksController::class, 'redirectWA']);
